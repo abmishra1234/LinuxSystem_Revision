@@ -1,0 +1,18 @@
+Learning 01.
+Whenever you are using getline(cin, str) and it is not working, so it happens because
+something hanged your inputstream unwantedly and so it will be always making problem
+
+The solution of this problem is that always use cin.ignore before calling getline
+
+Example is this 
+
+string str;
+cout << "Enter the striung : \n";
+cin.ignore(); // Important line to avoid the error
+getline(cin, str);
+cout << "Your input string is - " << str << endl;
+
+
+
+
+
