@@ -1,0 +1,28 @@
+https://iamabmishra.signin.aws.amazon.com/console
+
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1> Hello World from $(hostname -f) </h1>" > /var/www/html/index.html
+
+#--------------------------
+# command for building the directory structure
+mkdir src bins libs objs sample-makefiles Experimental shared_headers docs
+
+#----
+
+1. Instructions: https://docs.google.com/document/d/1dtM5LFDMx3aWeqI2e1rcn3xqLAU9YWn75YxmaLxlAq4/edit?usp=sharing
+
+2. Download source code link:
+https://drive.google.com/drive/folders/18Vl4sFNTbO0zLtJQT9mFXYcAYYWsKx_T?usp=sharing
+
+#---------------------------------------#
+
+How to export the environment variable which is using in another makefile?
+
+This Explained in makefile
+
+
+We also have to export the cross comiler path if you are doing crosss compilation
