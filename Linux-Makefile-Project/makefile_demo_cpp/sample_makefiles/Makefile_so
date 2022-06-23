@@ -57,7 +57,7 @@ INC = -I./ -I$(PROJ_ROOT_DIR)/share_headers
 
 #choose release/debug
 DEBUG = -pipe -g -Wall -W -fPIC
-RELEASE = -pipe -O2 -Wall -W -fPIC
+RELEASE = -pipe -O2 -Wall -Winstall -fPIC
 
 # -D stands for DEFINE. If want to define any macro which is used in code for \
     #  timestamp or git revision etc, can be used in this way.
